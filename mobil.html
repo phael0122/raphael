@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil Bandung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffff00;
+        }
+
+        header {
+            background-color: #000;
+            color: #ffff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffff00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .car-item {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .car-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .car-item h4 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .car-item form {
+            margin-top: 10px;
+        }
+
+        .car-item input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .car-item input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact h3 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXNX423rAfzDTyHMHQF3z-oFvJIAA9Cii1rBLLfxlLWgf2LmMY=w75-h75-p-rp-mo-br100" alt="Donna Rent Car Logo">
+        </div>
+        <h1>Donna Rent Car</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Utama</a></li>
+                <li><a href="mobil.html">Mobil</a></li>
+                <li><a href="penyewaan.html">Penyewaan</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Mobil mobil yang bisa anda pakai</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="https://img3.icarcdn.com/0052304/gallery_new-car-mobil123-toyota-calya-g-mt-wagon-indonesia_0052304_nOzl2EaGl73diiBx1xPnqm.jpg?smia=xTM" alt="Toyota Calya">
+                <h4>Toyota Calya</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="Toyota Calya">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+            <div class="car-item">
+                <img src="https://img4.icarcdn.com/3884656/gallery_used-car-mobil123-toyota-avanza-e-mpv-indonesia_3884656_T9DI6KcmzAsAdqsarGOUra.jpg?smia=xTM" alt="Toyota Avanza E">
+                <h4>Toyota Avanza E</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="Toyota Avanza E">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+            <div class="car-item">
+                <img src="https://img5.icarcdn.com/0527504/gallery_used-car-mobil123-toyota-avanza-g-mpv-indonesia_0527504_DHeAcHUdQ0k910BDswxf2R.JPG?smia=xTM" alt="Toyota Avanza G">
+                <h4>Toyota Avanza G</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="Toyota Avanza G">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+            <div class="car-item">
+                <img src="https://img4.icarcdn.com/2917267/gallery_used-car-mobil123-daihatsu-xenia-x-deluxe-mpv-indonesia_000002917267_3dfe4de6_9aaf_4d6c_a116_77c655abe43b.jpg?smia=xTM" alt="Daihatsu Xenia X Deluxe">
+                <h4>Daihatsu Xenia X Deluxe</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="Daihatsu Xenia X Deluxe">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+            <div class="car-item">
+                <img src="https://img5.icarcdn.com/1204346/gallery_used-car-mobil123-toyota-avanza-g-mpv-indonesia_1204346_rQRg4OJTHDV9GCt8K1Uf3i.jpg?smia=xTM" alt="Toyota Avanza G">
+                <h4>Toyota Avanza G</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="Toyota Avanza G">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+            <div class="car-item">
+                <img src="https://img.cintamobil.com/crop/640x360/2021/12/25/KM1pHMws/all-new-avanza-tipe-e-manual-28a2.jpeg" alt="All New Avanza Tipe E Manual">
+                <h4>All New Avanza Tipe E Manual</h4>
+                <form action="penyewaan.html" method="get">
+                    <input type="hidden" name="mobil" value="All New Avanza Tipe E Manual">
+                    <input type="submit" value="Pilih Mobil">
+                </form>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Alamat: Jl. Raya Cimindi Perumahan Graha Indah No.kav 28</h3>
+            <h3>Telepon: 085351282670</h3>
+            <h3>Email: donrent@gmail.com</h3>
+        </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil Bandung - Penyewaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #ffff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffff00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .contact h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact h3:nth-child(2),
+        .contact h3:nth-child(3) {
+            margin-top: 10px;
+        }
+
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-section label {
+            margin: 10px 0 5px;
+        }
+
+        .form-section input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXNX423rAfzDTyHMHQF3z-oFvJIAA9Cii1rBLLfxlLWgf2LmMY=w75-h75-p-rp-mo-br100" alt="Donna Rent Car Logo">
+        </div>
+        <h1>Donna Rent Car</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Utama</a></li>
+                <li><a href="mobil.html">Mobil</a></li>
+                <li><a href="penyewaan.html">Penyewaan</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Formulir Penyewaan</h2>
+            <form name="form" method="post">
+                <script>
+                    function proses() {
+                        var Nama = document.form.nama.value;
+                        var Mobil = document.form.mobil.value;
+                        var Alamat = document.form.alamat.value;
+                        var message =
+                            "Nama Anda: " + Nama +
+                            "\nMobil Anda: " + Mobil +
+                            "\nAlamat: " + Alamat;
+                        alert(message);
+                    }
+                </script>
+                <label for="nama">Nama :</label>
+                <input type="text" id="nama" name="nama" autocomplete="off"><br>
+                <label for="mobil">Mobil :</label>
+                <input type="text" id="mobil" name="mobil" autocomplete="off"><br>
+                <label for="alamat">Alamat :</label>
+                <input type="text" id="alamat" name="alamat" autocomplete="off"><br>
+                <input type="submit" value="Proses" onclick="proses()">
+            </form>
+        </section>
+        <section class="contact">
+            <h3>Alamat: Jl. Raya Cimindi Perumahan Graha Indah No.kav 28</h3>
+            <h3>Telepon: 085351282670</h3>
+            <h3>Email: donrent@gmail.com</h3>
+        </section>
+    </main>
+  </body>
+</html>
